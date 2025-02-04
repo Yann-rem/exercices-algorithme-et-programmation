@@ -50,3 +50,15 @@ resultat = carre(3)
 print(resultat)
 
 # %%
+
+# Exercice 4
+
+
+# Fonction qui affiche « Hello prénom » où prénom est une valeur saisie par l’utilisateur
+def salutation(prenom: str) -> str:
+    return f"Hello {prenom}"
+
+
+prenom = "Yannick"
+print(prenom)
+# %%
