@@ -34,3 +34,19 @@ def double(x: float) -> float:
 # Résultat
 resultat = double(2)
 print(resultat)
+
+# %%
+
+# Exercice 3
+
+
+# Fonction qui calcul l'aire d'un carré
+def carre(x: float) -> float:
+    return x * x
+
+
+# Résultat
+resultat = carre(3)
+print(resultat)
+
+# %%
