@@ -1,5 +1,9 @@
 # %%
 
+import datetime
+
+# %%
+
 # Exercice 1
 a = 10
 b = 10
@@ -61,4 +65,23 @@ def salutation(prenom: str) -> str:
 
 prenom = "Yannick"
 print(prenom)
+# %%
+
+# Exercice 5
+
+
+# Fonction pour calculer l'âge à partir de l'année de naissance
+def calculer_age(annee_naissance: int) -> int:
+    return datetime.datetime.now().year - annee_naissance
+
+
+# Saisie de l'année de naissance
+annee_naissance = int(input("Entrez l'année de naissance de la personne : "))
+
+# Calcul de l'âge
+age = calculer_age(annee_naissance)
+
+# Affichage de l'âge
+print(f"Une personne née en {annee_naissance} aura {age} ans cette année.")
+
 # %%
