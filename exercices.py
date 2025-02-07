@@ -85,3 +85,21 @@ age = calculer_age(annee_naissance)
 print(f"Une personne née en {annee_naissance} aura {age} ans cette année.")
 
 # %%
+
+# Exercice 6
+
+
+# Fonction pour calculer le prix TTC à partir du prix HT et d'une TVA de 20%
+def calculer_prix_ttc(prix_ht: float, tva: float = 0.20) -> float:
+    return prix_ht * (1 + tva)
+
+
+# Prix HT
+prix_ht = 100
+
+# Calcul du prix TTC
+prix_ttc = calculer_prix_ttc(prix_ht)
+
+# Affichage du prix TTC
+print(f"Le prix TTC pour un prix HT de {prix_ht}€ est de {prix_ttc}€.")
+# %%
