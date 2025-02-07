@@ -4,7 +4,8 @@ import datetime
 
 # %%
 
-# Exercice 1
+# Exercice 1 : à partir de deux nombres `a` et `b`, écrire le résultat pour l’addition, la
+# soustraction, la division et la multiplication.
 a = 10
 b = 10
 
@@ -27,7 +28,7 @@ print(f"Multiplication : {a} * {b} = {multiplication}")
 
 # %%
 
-# Exercice 2
+# Exercice 2 : écrire un algorithme permettant d’afficher le double d’un nombre `x`.
 
 
 # Fonction qui renvoie le double d'un nombre
@@ -41,7 +42,7 @@ print(resultat)
 
 # %%
 
-# Exercice 3
+# Exercice 3 : écrire un algorithme permettant de calculer l’aire d’un carré de côté `x`.
 
 
 # Fonction qui calcul l'aire d'un carré
@@ -55,10 +56,10 @@ print(resultat)
 
 # %%
 
-# Exercice 4
+# Exercice 4 : écrire un algorithme qui affiche « Hello prénom » où `prenom` est une valeur saisie par l’utilisateur.
 
 
-# Fonction qui affiche « Hello prénom » où prénom est une valeur saisie par l’utilisateur
+# Fonction qui affiche « Hello prénom » où `prenom` est une valeur saisie par l’utilisateur
 def salutation(prenom: str) -> str:
     return f"Hello {prenom}"
 
@@ -67,7 +68,8 @@ prenom = "Yannick"
 print(prenom)
 # %%
 
-# Exercice 5
+# Exercice 5 : écrire un algorithme permettant de calculer l’âge d’une personne à partir de son
+# année de naissance saisie au clavier.
 
 
 # Fonction pour calculer l'âge à partir de l'année de naissance
@@ -86,7 +88,8 @@ print(f"Une personne née en {annee_naissance} aura {age} ans cette année.")
 
 # %%
 
-# Exercice 6
+# Exercice 6 :écrire un algorithme qui calcule le prix TTC à partir d’un prix HT et d’une TVA de 20 %
+# (prestation de service en France).
 
 
 # Fonction pour calculer le prix TTC à partir du prix HT et d'une TVA de 20%
