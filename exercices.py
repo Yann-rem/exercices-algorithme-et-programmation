@@ -1,5 +1,6 @@
 # %%
 
+# Importation du module datetime
 import datetime
 
 # %%
@@ -13,6 +14,7 @@ b = 10
 addition = a + b
 soustraction = a - b
 
+# Vérification pour éviter la division par zéro
 if b != 0:
     division = a / b
 else:
@@ -38,6 +40,8 @@ def double(x: float) -> float:
 
 # Résultat
 resultat = double(2)
+
+# Affichage du résultat
 print(resultat)
 
 # %%
@@ -52,6 +56,8 @@ def carre(x: float) -> float:
 
 # Résultat
 resultat = carre(3)
+
+# Affichage du résultat
 print(resultat)
 
 # %%
@@ -64,7 +70,10 @@ def salutation(prenom: str) -> str:
     return f"Hello {prenom}"
 
 
+# Saisie du prénom
 prenom = "Yannick"
+
+# Affichage du prénom
 print(prenom)
 # %%
 
