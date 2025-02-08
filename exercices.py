@@ -115,3 +115,26 @@ prix_ttc = calculer_prix_ttc(prix_ht)
 # Affichage du prix TTC
 print(f"Le prix TTC pour un prix HT de {prix_ht}€ est de {prix_ttc}€.")
 # %%
+
+# Exercice 7 : Calculez le volume d’un parallélépipède dont la largeur, la longueur et la hauteur seront saisies au clavier.
+
+
+# Fonction pour calculer le volume d'un parallélépipède
+def calculer_volume_parallelepipede(
+    largeur: float, longueur: float, hauteur: float
+) -> float:
+    return largeur * longueur * hauteur
+
+
+# Saisie des dimensions
+largeur = float(input("Entrez la largeur du parallélépipède : "))
+longueur = float(input("Entrez la longueur du parallélépipède : "))
+hauteur = float(input("Entrez la hauteur du parallélépipède : "))
+
+# Calcul du volume
+volume = calculer_volume_parallelepipede(largeur, longueur, hauteur)
+
+# Affichage du volume
+print(f"Le volume du parallélépipède est de {volume} unités cubiques.")
+
+# %%
