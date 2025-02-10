@@ -178,3 +178,29 @@ print(f"Le montant après application de la remise de 15% est de {montant_remise
 print(f"Le prix TTC après application de la TVA de {taux_tva * 100}% est de {prix_ttc}€.")
 
 # %%
+
+# Exercice 9 : Calculez la moyenne des notes d’un élève après avoir saisi les notes de français,
+# de mathématiques, de géométrie et d’informatique.
+
+
+# Fonction pour calculer la moyenne
+def calculer_moyenne(notes: list) -> float:
+    return sum(notes) / len(notes)
+
+
+# Saisie des notes
+note_francais = float(input("Entrez la note de français : "))
+note_mathematiques = float(input("Entrez la note de mathématiques : "))
+note_geometrie = float(input("Entrez la note de géométrie : "))
+note_informatique = float(input("Entrez la note d'informatique : "))
+
+# Liste des notes
+notes = [note_francais, note_mathematiques, note_geometrie, note_informatique]
+
+# Calcul de la moyenne
+moyenne = calculer_moyenne(notes)
+
+# Affichage de la moyenne
+print(f"La moyenne des notes de l'élève est de {moyenne}.")
+
+# %%
