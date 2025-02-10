@@ -116,13 +116,12 @@ prix_ttc = calculer_prix_ttc(prix_ht)
 print(f"Le prix TTC pour un prix HT de {prix_ht}€ est de {prix_ttc}€.")
 # %%
 
-# Exercice 7 : Calculez le volume d’un parallélépipède dont la largeur, la longueur et la hauteur seront saisies au clavier.
+# Exercice 7 : Calculez le volume d’un parallélépipède dont la largeur, la longueur et la hauteur
+# seront saisies au clavier.
 
 
 # Fonction pour calculer le volume d'un parallélépipède
-def calculer_volume_parallelepipede(
-    largeur: float, longueur: float, hauteur: float
-) -> float:
+def calculer_volume_parallelepipede(largeur: float, longueur: float, hauteur: float) -> float:
     return largeur * longueur * hauteur
 
 
@@ -136,5 +135,46 @@ volume = calculer_volume_parallelepipede(largeur, longueur, hauteur)
 
 # Affichage du volume
 print(f"Le volume du parallélépipède est de {volume} unités cubiques.")
+
+# %%
+
+
+# Exercice 8 : Saisissez le prix unitaire HT d’un produit et la quantité commandée. Calculez le montant HT de la
+# commande, appliquez une remise de 15 % et calculez le prix TTC après avoir saisi le taux de TVA.
+
+
+# Fonction pour calculer le montant HT
+def calculer_montant_ht(prix_unitaire_ht: float, quantite: int) -> float:
+    return prix_unitaire_ht * quantite
+
+
+# Fonction pour appliquer une remise
+def appliquer_remise(montant_ht: float, remise: float) -> float:
+    return montant_ht * (1 - remise)
+
+
+# Fonction pour calculer le prix TTC
+def calculer_prix_ttc_apres_remise(montant_remise: float, tva: float) -> float:
+    return montant_remise * (1 + tva)
+
+
+# Saisie des informations
+prix_unitaire_ht = float(input("Entrez le prix unitaire HT du produit : "))
+quantite = int(input("Entrez la quantité commandée : "))
+taux_tva = float(input("Entrez le taux de TVA (en pourcentage) : "))
+
+# Calcul du montant HT
+montant_ht = calculer_montant_ht(prix_unitaire_ht, quantite)
+
+# Application d'une remise de 15%
+montant_remise = appliquer_remise(montant_ht, 0.15)
+
+# Calcul du prix TTC
+prix_ttc = calculer_prix_ttc_apres_remise(montant_remise, taux_tva)
+
+# Affichage des résultats
+print(f"Le montant HT de la commande est de {montant_ht}€.")
+print(f"Le montant après application de la remise de 15% est de {montant_remise}€.")
+print(f"Le prix TTC après application de la TVA de {taux_tva * 100}% est de {prix_ttc}€.")
 
 # %%
