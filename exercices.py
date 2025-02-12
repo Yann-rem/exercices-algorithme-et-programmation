@@ -204,3 +204,21 @@ moyenne = calculer_moyenne(notes)
 print(f"La moyenne des notes de l'élève est de {moyenne}.")
 
 # %%
+
+# Exercice 10 : Affichez une table de multiplication (jusqu’à 10) dont l’ordre (le nombre concerné)
+# sera saisi au clavier.
+
+
+# Fonction pour afficher la table de multiplication
+def afficher_table_multiplication(nombre: int):
+    for i in range(1, 11):
+        print(f"{nombre} x {i} = {nombre * i}")
+
+
+# Saisie du nombre
+nombre = int(
+    input("Entrez le nombre pour lequel vous souhaitez afficher la table de multiplication : ")
+)
+
+# Affichage de la table de multiplication
+afficher_table_multiplication(nombre)
